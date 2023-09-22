@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Hello World</h1>
+    <div>This is my <spam>Article</spam>
+    </div>
+    <span>one</span>
+    <span>two</span>
+    <span>three</span>
+
+    <!--Class Selector-->
+    <p class="text">The first block of text</p>
+    <p class="text">The second block of text</p>
+
+    <!--Id Selector-->
+    <div id="error"> The password is incorrect</div>
+
+    <!--Attribute Selector-->
+    <input type="radio" name="vote" value="one" />
+    <input type="radio" name="vote" value="two" />
+
+    <!--Combinators-->
+    <div class="A">
+        <span class="B">one</span>
+        <span class="C">two</span>
+        <span class="B">three</span>
+        <span class="B">four</span>
+        <div>
+            <span class="B">five</span>
+        </div>
+    </div>
+    <span class="B">six</span>
+    <!--Speciicity-->
+    <div id="id" class="class1 class2">text</div>
+</body>
+
+</html>

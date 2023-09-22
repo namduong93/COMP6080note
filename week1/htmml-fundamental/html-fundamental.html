@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script type="text/javascript" src="script.js"></script>
+    <title>My page</title>
+    <!--More meta-->
+</head>
+
+<body>
+    <!--Layout Tag-->
+    <div></div> <!--A generic "boxgroupping" element-->
+    <span></span> <!--A generic "grouping" element-->
+
+    <p></p> <!--A paragraph-->
+    <h1></h1> <!--1st biggest header (text)-->
+    <h6></h6> <!--6th biggest header (text)-->
+
+    <ul>
+        <li></li>
+        <li></li>
+    </ul> <!--A unordered list of items-->
+    <ol>
+        <li></li>
+        <li></li>
+    </ol> <!--A ordered list of items-->
+    <table></table> <!--A table of information-->
+
+    <!--Formatting tag-->
+    <b></b> <!--Bold text-->
+    <i></i> <!--Italic-->
+    <u></u> <!-- Undelined text-->
+
+    <!--Links-->
+    <a href="/settings" title="Open settings page">Settings</a>
+    <a href="https://en.wikipedia.org" target="_blank">Wikipedia</a>
+    <!--A rare but interesting use case -->
+    <a href="/image.png" download>
+        <img src="dowload-icon.png" />
+    </a>
+
+    <!--Image-->
+    <img src="cat.jpg" alt="Image of the cat" width="300" height="600" />
+
+    <!--Form-->
+    <!--Input:
+        Type: the type of the field(text, radio)
+        Name: name of the attribute during submission
+        Value: the default value to the field that will be sent when submitting
+        Placeholder: Background Hint
+        Disabled: Bollean as to whether the field is disabled
+    -->
+    <input type="text" placeholder="Input here please?" />
+    <input type="radio" id="yes" name="answer" value="yes" checked />
+    <input type="radio" id="no" name="answer" value="no" />
+    <input type="checkbox" id="no" name="answer" value="no" checked />
+    <input type="checkbox" id="yes" name="answer" value="yes" />
+    <input type="hidden" name="messageID" value="message123" />
+
+    <!--Textarea-->
+    <textarea rows="5" cols="40" placeholder="Write here"> Default value</textarea>
+
+    <!--Select-->
+    <select name="animal">
+        <option value="" selected>Select you favourite animal</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+    </select>
+    <br>
+
+    <!--Label-->
+    <label for="dog">I am a dog</label>
+    <input type="checkbox" value="dog" id="dog" />
+
+    <!--Button-->
+    <button>
+        This is a general button
+    </button>
+    <input type="submit" value="This is a submit button" />
+
+    <!--Interesting-->
+    <iframe src="https://google.com" width="400" height="400"></iframe>
+
+    <!-- So much more ....-->
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+.flex {
+    display: flex;
+    justify-content: space-between;
+    /*flex-direction: row row-reverse column column-reverse */
+    flex-direction: row;
+    /* align-items: stretch center flex-start flex-end */
+    align-items: center;
+    /* justify-content: space-around space-around center flex-start flex-end */
+    justify-content: space-around;
+    width: 200px;
+    height: 50px;
+    border: 5px solid blue;
+}
+
+.child {
+    width: 30px;
+    border: 5px solid green;
+}

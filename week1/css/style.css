@@ -1,0 +1,91 @@
+* {
+    color: blue;
+}
+
+span {
+    color: blue;
+}
+
+.text {
+    margin-top: 10px;
+}
+
+#error {
+    color: red;
+}
+
+input[type="radio"] {
+    margin: 0 10px;
+}
+
+/* All B in side A */
+/* .A .B {
+    color: red;
+} */
+/* All .B which are child of .A */
+/* .A>.B {
+    color: red;
+} */
+/* .B after .C */
+/* .C+.B {
+    color: red;
+} */
+/* all .B after .C  */
+.C~.B {
+    color: red;
+}
+
+/* Pseudo-classes */
+button:first-child {
+    background-color: blue;
+}
+
+button:last-child {
+    background-color: blue;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+input:focus {
+    color: red;
+}
+
+input:disabled {
+    background-color: #ccc;
+}
+
+a:visited {
+    color: red;
+}
+
+/* Pseudo-elements */
+.text::first-letter {
+    color: black;
+}
+
+.text::after {
+    content: '*';
+    color: red;
+}
+
+/* Cascade */
+.title {
+    /* Will be overidden by next rule  */
+    font-size: 36px;
+}
+
+.title {
+    /* Will overide the past rule  */
+    font-size: 40px;
+}
+
+/* Specificity */
+div#id.class1.class2 {
+    color: red;
+}
+
+#id.class1 {
+    color: blue
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Box model-->
+    <div class="box">
+        <div class="content"></div>
+    </div>
+    <div class="box">
+        <div class="content"></div>
+    </div>
+
+    <!--Block element-->
+    <div class="breakBlockElement">
+        text before
+        <div class="block">
+            block <span>element</span>
+            <div>inner block</div>
+        </div>
+        text after
+    </div>
+
+    <!--Inline element-->
+    <div class="breakInlineElement">
+        text before
+        <span class="inline">
+            inline
+            <span class="inlineBlock">element</span>
+        </span>
+        text after
+    </div>
+
+    <!--None-->
+    <div>
+        text before
+        <div class="none">removed block</div>
+        text after
+    </div>
+
+    <!--Visibility-->
+    <!--It will preserve the space-->
+    <div class="breakVisibilityElement">
+        hide
+        <span class="visibility">the element</span>
+        and preserve the space
+    </div>
+
+    <!--Float-->
+    <div class="breakFloat">
+        very very long text
+        <img src="https://hips.hearstapps.com/hmg-prod/images/cute-photos-of-cats-looking-at-camera-1593184780.jpg"
+            class="float" />
+        more of very long long text
+        more of very long long text
+    </div>
+
+    <!--Static Position-->
+    <div class="container">
+        Shows
+        <span class="position">the position</span>
+        of the element
+    </div>
+
+    <!--Overflow-->
+    <div class="overflow">
+        very very long text
+        more of very very long text
+    </div>
+</body>
+
+</html>
