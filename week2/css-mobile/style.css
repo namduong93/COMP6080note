@@ -1,0 +1,36 @@
+.article {
+    padding: 5px 10px;
+    border: 5px solid blue;
+}
+
+/* Example of media query */
+@media (max-width: 500px) {
+    .article {
+        padding: 10px 20px;
+    }
+}
+
+/* Media types: all print screen speech */
+@media all {}
+/* Media types: print mode */
+@media print {}
+/* Media types: screen devices */
+@media screen {}
+/* Media types: speech synthesizers */
+@media speech {}
+
+/* Media Features: 500px and narrower (e.g. a phone) */
+@media (max-width: 500px) {}
+/* Media Features: 500px and narrower (e.g. a phone) */
+@media (min-width: 501px) {}
+/* Media Features: Primary input can hover */
+@media (hover:hover) {}
+/* Media Features: Dark mode preference */
+@media (prefers-color-scheme: dark) {}
+
+/* Multiple criteria */
+@media screen and (min-width:320px) and (orientation: portrait) {}
+/* Negate query */
+@media not screen and (min-width: 320px) and (orientation:portrait) {}
+/* Combine queries */
+@media print, screen and (min-width:320px) {}
