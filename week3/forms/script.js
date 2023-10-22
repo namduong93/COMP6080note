@@ -1,5 +1,6 @@
 let form = document.forms.user_form;
 
+//Multiple input in 1 form
 form.addEventListener('submit', (event) => {
     event.preventDefault();
     br = document.createElement("br");
