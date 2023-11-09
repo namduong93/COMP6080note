@@ -2,9 +2,13 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const date = new Date(Date.now());
   return (
     <div className="App">
       <header className="App-header">
+        <div>{date.toLocaleString()}</div>
+        <h1>Hello Work</h1>
+        <p>How cool is this</p>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
