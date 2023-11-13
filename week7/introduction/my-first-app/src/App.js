@@ -10,7 +10,11 @@ import { SmileyFace } from './components/SmileyFace';
 import { MyButton } from './components/MyButton';
 
 function UNSWa(props) {
-  return <a href={props.href} {...props}>UNSWa</a>
+  return (
+    <div>
+      <a href={props.href} {...props}>UNSWa</a>
+    </div>
+  );
 }
 
 function App() {
