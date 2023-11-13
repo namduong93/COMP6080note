@@ -1,13 +1,17 @@
 // Introduction: https://cgi.cse.unsw.edu.au/~cs6080/23T3/content/lectures/react-intro
 // React CSS Basic: https://cgi.cse.unsw.edu.au/~cs6080/23T3/content/lectures/react-css-basic
 // React LifeCycle: https://cgi.cse.unsw.edu.au/~cs6080/23T3/content/lectures/react-lifecycle
+// React Component & Props: https://cgi.cse.unsw.edu.au/~cs6080/23T3/content/lectures/react-components-props
 
 import logo from './logo.svg';
 import './App.css';
 import React, { useEffect, useState } from "react";
+import { SmileyFace } from './components/SmileyFace';
+import { MyButton } from './components/MyButton';
 
-// let globalSecond = 59;
-
+function UNSWa(props) {
+  return <a href={props.href} {...props}>UNSWa</a>
+}
 
 function App() {
   const date = new Date(Date.now());
@@ -18,16 +22,21 @@ function App() {
     const intervalId = window.setInterval(() => {
       if (second === 0) {
         setSecond(59);
-        setMinute(m => m - 1);
+        if (minute !== 0) {
+          setMinute(m => m - 1);
+        }
+        else {
+          setMinute(59);
+        }
         return;
       }
       // globalSecond--;
       setSecond(s => s - 1);
-    }, 50);
+    }, 1000);
     return () => {
       clearInterval(intervalId);
     };
-  }, [second]); // The empty dependency array means the effect runs once when the component mounts
+  }, [second, minute]); // The empty dependency array means the effect runs once when the component mounts
   const reset = () => {
     setSecond(59);
     setMinute(59);
@@ -75,6 +84,20 @@ function App() {
           {minute}:{second}
         </div>
         <button onClick={reset}>Reset</button>
+      </header>
+      {/* Components & Props */}
+      <header className="App-header">
+        <MyButton
+          width={200}
+          onClick={function () {
+            alert("Hey!")
+          }}
+        >
+          This is my button
+        </MyButton>
+        <MyButton width={500}>This is my button</MyButton>
+        <UNSWa title="Google" href="https://www.unsw.edu.au/">Google</UNSWa>
+        <SmileyFace />
       </header>
     </div>
   );
