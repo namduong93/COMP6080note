@@ -32,7 +32,23 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.App-date {
+  max-width: 400px;
+  text-align: center;
+  margin: 8px;
+  padding: 32px;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+  transition: transform 0.25s ease-in-out;
+}
+
+.App-date :hover {
+  transform: scale(1.01);
 }
